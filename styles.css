@@ -128,7 +128,14 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(12px);
   font-size: 0.9rem;
+}
+
+.route-chip {
   color: var(--sand);
+}
+
+.timing-chip {
+  color: var(--ink);
 }
 
 .hero-panel {
