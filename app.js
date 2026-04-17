@@ -30,7 +30,7 @@ const itinerary = {
           kind: "Borgo",
           duration: "1h circa",
           note:
-            "Prima tappa ideale: raccolta, elegante e molto coerente con il vostro gusto. Vale il centro storico, la Torre dell'Orologio e il giro lento verso San Rocco.",
+            "Prima tappa ideale: raccolta, elegante e molto coerente con il gusto collinare. Vale il centro storico, la Torre dell'Orologio e il giro lento verso San Rocco.",
           image:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Primavera%20a%20Neive.jpg",
           imageAlt: "Veduta di Neive",
@@ -43,7 +43,7 @@ const itinerary = {
           kind: "Torre panoramica",
           duration: "50 min",
           note:
-            "La tappa più scenografica della tarda mattinata: la torre offre davvero il colpo d'occhio a 360° che cercavate.",
+            "La tappa più scenografica della tarda mattinata: la torre offre davvero il colpo d'occhio a 360° ricercato.",
           image:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Barbaresco%20Tower%2029-11-21.jpg",
           imageAlt: "Torre di Barbaresco",
@@ -108,7 +108,7 @@ const itinerary = {
           kind: "Relax",
           duration: "sera tranquilla",
           note:
-            "Rientro morbido, cena in airbnb e basta. Dopo degustazione e giretti, questa chiusura e molto sensata.",
+            "Rientro morbido, cena in airbnb e relax.",
           image:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Castellinaldo%20panorama.jpg",
           imageAlt: "Panorama di Castellinaldo",
@@ -157,7 +157,7 @@ const itinerary = {
           kind: "Borgo iconico",
           duration: "1h 15",
           note:
-            "Qui il borgo e piu che sufficiente anche senza fare il museo completo: passeggiata, castello, enoteche e atmosfera.",
+            "Qui il borgo e piu che sufficiente anche senza fare il museo Open Air completo: passeggiata, castello, enoteche e atmosfera.",
           image:
             "https://commons.wikimedia.org/wiki/Special:FilePath/Barolo%20-%20veduta%20panoramica%20con%20la%20chiesa.jpg",
           imageAlt: "Veduta di Barolo",
@@ -170,7 +170,7 @@ const itinerary = {
           kind: "Pranzo",
           duration: "Osteria Vinbar",
           note:
-            "Pranzo nel posto che avete segnato voi, in una delle piazze piu belle e panoramiche da vivere con calma.",
+            "Pranzo nel posto che avete segnato voi, e vista da una delle piazze piu belle e panoramiche da vivere con calma.",
           image:
             "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Morra%20paese.jpg",
           imageAlt: "Centro di La Morra",
