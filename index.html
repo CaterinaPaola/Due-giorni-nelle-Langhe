@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Due giorni nelle Langhe</title>
+    <meta
+      name="description"
+      content="Itinerario di due giorni nelle Langhe con mappa interattiva, tappe consigliate e percorsi filtrabili per il weekend del 18-19 aprile 2026."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Weekend del 18-19 aprile 2026</p>
+          <h1>Due giorni nelle Langhe</h1>
+          <p class="lede">
+            Un itinerario morbido, panoramico e molto wine-country: sabato tra
+            Neive, Barbaresco e Verduno, domenica tra Monforte, Barolo e La
+            Morra, con tempi realistici e qualche momento per godersi il
+            paesaggio senza correre.
+          </p>
+          <div class="hero-badges">
+            <span>Partenza indicativa: Brianza ore 9:00</span>
+            <span>Degustazione fissata: Verduno ore 15:30</span>
+            <span>Notte: Castellinaldo d'Alba</span>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <p class="panel-kicker">Il taglio scelto</p>
+          <ul>
+            <li>Sabato più raccolto, con paesini fotogenici e poco dispersivi.</li>
+            <li>Domenica più classica, sul versante Barolo con pranzo comodo.</li>
+            <li>Alba resta fuori dal giro principale: bella, ma meno in linea con il mood collinare che cercate.</li>
+          </ul>
+        </aside>
+      </header>
+
+      <main>
+        <section class="overview-grid">
+          <article class="overview-card featured">
+            <p class="card-label">Percorso consigliato</p>
+            <h2>La logica del weekend</h2>
+            <p>
+              Ho privilegiato i borghi che danno davvero la sensazione di
+              Langhe "da cartolina", evitando zig-zag inutili e lasciando spazio
+              al tempo lento: scorci, picnic, degustazione e tramonto.
+            </p>
+          </article>
+          <article class="overview-card">
+            <p class="card-label">Sabato</p>
+            <h3>Neive, Barbaresco, Grinzane Cavour, Verduno, La Morra</h3>
+            <p>Più poesia, vista panoramica e un finale dorato prima dell'airbnb.</p>
+          </article>
+          <article class="overview-card">
+            <p class="card-label">Domenica</p>
+            <h3>Monforte d'Alba, Barolo, La Morra e passeggiata digestiva</h3>
+            <p>Più icone del Barolo, pranzo prenotato e rientro senza fretta.</p>
+          </article>
+        </section>
+
+        <section class="map-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Mappa interattiva</p>
+              <h2>Percorsi giorno per giorno</h2>
+            </div>
+            <p class="section-note">
+              I tracciati provano a calcolare una strada reale; se il servizio
+              routing è lento, rimane comunque il collegamento essenziale tra le
+              tappe.
+            </p>
+          </div>
+
+          <div class="map-toolbar" role="tablist" aria-label="Filtra i percorsi">
+            <button class="filter-btn is-active" data-filter="all" type="button">
+              Mostra entrambi i giorni
+            </button>
+            <button class="filter-btn" data-filter="day1" type="button">
+              Solo Giorno 1
+            </button>
+            <button class="filter-btn" data-filter="day2" type="button">
+              Solo Giorno 2
+            </button>
+          </div>
+
+          <div id="map" class="map-frame" aria-label="Mappa dell'itinerario"></div>
+
+          <div id="route-panels" class="route-panels"></div>
+        </section>
+
+        <section class="stops-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Tappe scelte</p>
+              <h2>I posti che meritano davvero</h2>
+            </div>
+            <p class="section-note">
+              Ho tenuto come prioritarie le località più belle e coerenti con il
+              tuo gusto: borghi piccoli, super panoramici, molto Langhe.
+            </p>
+          </div>
+
+          <div id="day-grids" class="day-grids"></div>
+        </section>
+
+        <section class="extras-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Se avete energia extra</p>
+              <h2>Detour facoltativi</h2>
+            </div>
+          </div>
+          <div class="extras-grid">
+            <article class="extra-card">
+              <h3>La Vigna dei Pastelli, Coazzolo</h3>
+              <p>
+                Più poetica che indispensabile. Sta meglio se un giorno avete
+                voglia di allungare verso il lato più artistico e meno classico
+                delle Langhe.
+              </p>
+            </article>
+            <article class="extra-card">
+              <h3>Big Chair of Love, Cossano Belbo</h3>
+              <p>
+                Simpatica e molto fotografata, ma decisamente più fuori mano
+                rispetto al cuore del weekend. La lascerei solo se volete una
+                deviazione giocosa.
+              </p>
+            </article>
+            <article class="extra-card">
+              <h3>Alba</h3>
+              <p>
+                Bellissima città, però meno intima e collinare dei borghi che
+                avete in mente. Per due giorni la terrei fuori, così il ritmo
+                resta più rilassato.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="sources-section">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Fonti e ispirazione</p>
+              <h2>Da dove nasce questo itinerario</h2>
+            </div>
+          </div>
+          <div class="sources-list">
+            <a href="https://www.visitlmr.it/" target="_blank" rel="noreferrer">
+              Ente Turismo Langhe Monferrato Roero
+            </a>
+            <a href="https://langhe.net/en/sight/the-tower-of-barbaresco/" target="_blank" rel="noreferrer">
+              Torre di Barbaresco su Langhe.net
+            </a>
+            <a href="https://www.uvelanghe.it/en/langhe/" target="_blank" rel="noreferrer">
+              Panorama e posizione strategica di La Morra
+            </a>
+            <a href="https://www.cantine.wine/en/cantina-langhe-bel-colle/visite" target="_blank" rel="noreferrer">
+              Esperienze vino a Verduno, area Bel Colle
+            </a>
+            <a href="https://www.visittuscany.com/en/" target="_blank" rel="noreferrer">
+              Ispirazione visuale editoriale per il layout tourism-style
+            </a>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
